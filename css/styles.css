@@ -167,13 +167,7 @@ body{
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
-.auth-nav li{
-    margin-right: 50px;
-}
 
-.auth-nav li:last-child{
-    margin: 0;
-}
 
 .auth-nav .link-tel:hover ,
 .auth-nav .link-tel:focus {
@@ -389,7 +383,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;   
     color: var(--title-text-color);
-    margin-bottom: 30px;   
+    margin-bottom: 50px;   
 }
 
 .container-teams {
