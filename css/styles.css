@@ -112,9 +112,22 @@ body{
 .auth-nav {
     display: flex;
     align-items: center;
-    gap: 50px;    
+          
 }
 
+
+
+
+.auth-nav::before{
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/envelope.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
 
 
 .header-nav a,
@@ -149,6 +162,7 @@ body{
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-right: 30px;
 }
 
 .auth-nav .link:hover ,
@@ -160,7 +174,7 @@ body{
 
 .link-tel {
     display: block;
-    min-width: 122px;
+    width: 122px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -168,6 +182,18 @@ body{
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
+.link-tel::before{
+    content: "";
+    width: 10px;
+    height: 16px;
+    display: block;
+    background-image: url(../images/smartphone.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+
+
+}
+
 
 
 .auth-nav .link-tel:hover ,
@@ -199,7 +225,7 @@ body{
 
 /*--------------Hero-------------*/
 .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin: 0 auto;
     background-color: #2F303A;
@@ -346,12 +372,33 @@ body{
 
 .item-section {
     display: block;
-    flex-basis: calc((100% - 90px) / 4);  
+    flex-basis: calc((100% - 90px) / 4);
 }
 
+.item-section::before{
+    display: block;   
+    content: "";      
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;    
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    margin-bottom: 30px;
+}
 
-
-
+.icon-antenna::before{
+    background-image: url(../images/antenna.svg);
+}
+.icon-clock::before{
+    background-image: url(../images/clock.svg);
+}
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg);
+}
 /*--------------Чим ми займаємось--------------*/
 .profile {
     padding-top: 0;   
@@ -477,13 +524,30 @@ body{
 
 
 /*----------------------Наші клієнти----------------------*/
-.container-klient{
-    display: flex;
+
+.klient-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,1666;
+    text-align: center;
+    letter-spacing: 0.03em;    
+    color: var(--title-text-color);
+    margin-bottom: 50px;    
 }
 
-.container-klient li{
-    display: block-inline;
-}
+
+.container-klient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;    
+}  
+    
+
+
+
+ 
 /*---------------Footer-------------------*/
 
 .footer {
