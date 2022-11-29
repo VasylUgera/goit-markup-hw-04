@@ -111,28 +111,30 @@ body{
 
 .auth-nav {
     display: flex;
+    padding: 0;
+    margin: 0;
     align-items: center;
+    gap: 30px;
           
 }
 
+.item-auth{
+    display: flex;
+    align-items: center;
+}
 
-
-
-.auth-nav::before{
-    content: "";
-    width: 16px;
-    height: 12px;
-    background-image: url(../images/envelope.svg);
-    background-repeat: no-repeat;
+.icon-mail{
+    display: block;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    padding-right: 10px;
+    cursor: pointer;   
 }
 
 
 .header-nav a,
 .auth-nav a,
-.footer .link,
+.footer .link-mail,
 .footer .link-tel {
     text-decoration: none;
 }
@@ -152,34 +154,44 @@ body{
 }
 
 
-.header-nav .link:active {
+/* .header-nav .link:active {
     color: #000000;
 }
+ */
 
-.auth-nav .link {
+.icon.mail{
+
+}
+
+.link-mail {    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    margin-right: 30px;
+    align-items: center;
 }
 
-.auth-nav .link:hover ,
-.auth-nav .link:focus {
+.link-mail:hover,
+.link-mail:focus{
     color: var(--accent-color);
 }
 
 
 
+.icon-mail:hover,
+.icon-mail:focus {
+    fill: var(--accent-color);
+}
+
 .link-tel {
-    display: block;
-    width: 122px;
+    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
+    text-transform: uppercase;
     color: var(--primary-text-color);
 }
 .link-tel::before{
@@ -190,6 +202,7 @@ body{
     background-image: url(../images/smartphone.svg);
     background-repeat: no-repeat;
     align-items: center;
+    margin-right: 10px;
 
 
 }
@@ -607,43 +620,52 @@ body{
     color: var(--primary--white-color);    
 }
 
-.footer-link li{
+.footer-link li:not(:last-child){
     margin-bottom: 9px;
+    
+    
 }
 
-.footer-link li:last-child{
+/*
     margin-bottom: 0;
+}*/
+
+.footer-link > li{
+    
 }
 
-
-.footer-link .link {
+.link-mail-footer {
     display: inline-block;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
+    text-decoration: none;  
     color: rgba(255, 255, 255, 0.6);
+    
 }    
 
-.footer-link .link-tel {
+.link-tel-footer {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+    
 }
 
 .item-footer:hover,
-.footer-link .link:hover,
-.footer-link .link-tel:hover {
+.link-mail-footer:hover,
+.link-tel-footer:hover {
     color: var(--button-active-color);
 }
 
 .item-footer:focus,
-.footer-link .link:focus,
-.footer-link .link-tel:focus {
+.link-mail-footer:focus,
+.link-tel-footer:focus {
     color: var(--button-active-color);
 }
 /*--     Potrfoliuo    --*/
