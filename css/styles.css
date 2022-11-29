@@ -106,7 +106,7 @@ body{
 .header-container {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    /*justify-content: center;*/
 }
 
 .auth-nav {
@@ -115,7 +115,7 @@ body{
     margin: 0;
     align-items: center;
     gap: 30px;
-          
+    margin-left: auto;      
 }
 
 .item-auth{
@@ -124,11 +124,11 @@ body{
 }
 
 .icon-mail{
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding-right: 10px;
-    cursor: pointer;   
+       
 }
 
 
@@ -159,9 +159,6 @@ body{
 }
  */
 
-.icon.mail{
-
-}
 
 .link-mail {    
     font-weight: 500;
