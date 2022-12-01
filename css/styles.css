@@ -860,8 +860,6 @@ fill: currentColor;
 .link-portfolio{
     background: var(--primary--white-color);
     width: calc((100% - 60px) / 3) ;
-    border: 1px solid #EEEEEE;
-
 }
 
 .portolio-img{
