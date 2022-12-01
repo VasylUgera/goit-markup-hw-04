@@ -154,7 +154,8 @@ body{
  */
 
 
-.link-mail {    
+.link-mail { 
+    display: flex;   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -595,7 +596,7 @@ fill: currentColor;
 
 .footer-container {
     display: flex;
-    
+    align-items: baseline;    
 }
 
 .footer-adres{
@@ -701,9 +702,9 @@ fill: currentColor;
 
 
 
-.social{
-   padding-top: 12px;    
-}
+/*.social{
+   padding-top: 0px; 
+}*/
 
 .footer-internet{
     display: blok;
@@ -865,6 +866,7 @@ fill: currentColor;
 
 .portolio-img{
     display: block;
+    text-decoration: none;
 
 }
 
