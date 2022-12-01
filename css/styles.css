@@ -860,14 +860,13 @@ fill: currentColor;
 .link-portfolio{
     background: var(--primary--white-color);
     width: calc((100% - 60px) / 3) ;
-    /*border: 1px solid #EEEEEE;*/  
+    /*border: 1px solid #EEEEEE;*/
 
 }
 
 .portolio-img{
     display: block;
     text-decoration: none;
-
 }
 
 .portolio-img:hover,
@@ -880,6 +879,5 @@ fill: currentColor;
     display: block;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    border-top: 0;
-    
+    border-top: 0;    
 }
