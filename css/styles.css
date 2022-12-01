@@ -502,14 +502,13 @@ body{
     display: flex;
     justify-content: center;
     gap: 10px;
-
 }
 
 .teams-item{
     width: 44px;
     height: 44px;
-
 }
+
 .teams-link{
     width: 100%;
     height: 100%;
@@ -586,6 +585,9 @@ fill: currentColor;
 /*---------------Footer-------------------*/
 
 .footer {
+    /*max-width: 1600px;
+    height: 252px;
+    margin: 0 auto ;*/   
     background-color:#2F303A;
     padding: 60px 0;
     
@@ -614,8 +616,8 @@ fill: currentColor;
 }*/
 
 .logofooter {
-    display: inline-block;
-    width: 145px;
+    /*display: inline-block;*/
+    /*width: 145px;*/
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -695,21 +697,82 @@ fill: currentColor;
     color: var(--button-active-color);
 }
 
+/*--------------Соціалка Footera---------------*/
+
+
+
+.social{
+   padding-top: 12px;    
+}
 
 .footer-internet{
     display: blok;
 }
 
 .footer-internet-title{
-    display: block;
-    padding-top: 12px;
+    display: block;    
+    margin-bottom: 20px;    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary--white-color);
+   
 }
 
-.footer-internet-link{
+.footer-internet-link{ 
     display: flex;
-    padding-top:12px;
-    margin-bottom: 10px;
+   
 }
+
+/* міняєм ul  team - list na social-list---*/
+.social-list{ 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* міняєм li  team - item  na social-item---*/
+
+.social-item{
+    width: 44px;
+    height: 44px;
+}
+
+/* міняєм a   team - linl  na social-link---*/
+
+.social-link{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .teams-icon,
+.social-link:focus .teams-icon{
+    fill:var(--primary--white-color);
+}
+
+.social-icon{
+    fill: var(--primary--white-color);
+}
+.social-icon:hover,
+.social-icon:focus{
+    fill:var(--primary--white-color);
+}
+
+
 
 /*--     Potrfoliuo    --*/
 
@@ -745,6 +808,8 @@ fill: currentColor;
     
     background-color: var(--accent-color);
     color: var(--primary--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
@@ -796,6 +861,17 @@ fill: currentColor;
     width: calc((100% - 60px) / 3) ;
     /*border: 1px solid #EEEEEE;*/  
 
+}
+
+.portolio-img{
+    display: block;
+
+}
+
+.portolio-img:hover,
+.portolio-img:focus{
+    /*border: 1px solid #EEEEEE;*/
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .tetle-portfolio{
